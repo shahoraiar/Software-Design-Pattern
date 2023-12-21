@@ -86,10 +86,8 @@ class FurnitureFactory(IFurnitureFactory) :
 class Client : 
     factory_name = input('enter (CF/TF) : ')
     FF = FurnitureFactory.get_furniture(factory_name) # chairfactory()
-    # furniture_name, FF = FurnitureFactory.get_furniture(factory_name)
-    print(f"factory name : {factory_name}|| || {FF.get_dimensions()}")
-    # print(f"Factory name: {factory_name} || Furniture name: {furniture_name} || Object Type: {type(FF)} || {FF.get_dimensions()}")
-    
+    print(f"factory name : {factory_name}||{FF.get_dimensions()}")
+
 if __name__ == '__main__' : 
     Shahoraiar = Client()
 
